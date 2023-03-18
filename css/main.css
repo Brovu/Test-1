@@ -1,0 +1,270 @@
+body {
+  height: 5000px;
+}
+
+#contact {
+  background-color: whitesmoke;
+  color: gray;
+}
+
+#contact,
+.contact__left,
+.contact__right {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.contact__left,
+.contact__right {
+  padding: 10px;
+}
+
+.contact-title {
+  position: relative;
+  padding-right: 18px;
+}
+
+.contact-border::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-left: 1px solid rgb(11, 121, 121);
+  height: 30px;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.navbar__logo {
+  cursor: pointer;
+}
+
+.navbar__link {
+}
+
+.navbar__link-name {
+  padding: 25px;
+  color: gray;
+}
+
+.navbar__link-name:nth-child(2) {
+  position: relative;
+}
+
+.navbar__link-name:hover {
+  color: var(--green-color);
+  background-color: whitesmoke;
+}
+
+.navber__icon {
+}
+
+.navbar__icon-i {
+  padding: 25px 15px;
+  color: grey;
+  cursor: pointer;
+}
+
+.navbar__icon-i:hover {
+  color: var(--green-color);
+}
+
+.navbar__link-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 1000;
+  min-width: 10rem;
+  padding: 0.5rem 0.5rem;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: grey;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+}
+
+#banner {
+  position: relative;
+  background: url("../assets/img/banner-bg.jpg") no-repeat left fixed;
+  background-size: cover;
+  margin-top: 10px;
+  width: 100%;
+  height: 500px;
+}
+
+.banner__content {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+
+.banner__title-one {
+  color: white;
+}
+
+.banner__title-two,
+.banner__title-three {
+  display: flex;
+  gap: 10px;
+}
+
+.banner__btn {
+  background-color: var(--green-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 200px;
+}
+
+.banner__btn:hover {
+  color: var(--green-color);
+  background-color: whitesmoke;
+}
+
+#product {
+  text-align: center;
+}
+
+.product__title {
+  position: relative;
+}
+
+.product-border {
+  border-top: 1px solid #000;
+  width: 1000px;
+  color: white;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.product__slogan {
+  color: grey;
+}
+
+.product__l1-list {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.product__l1-items {
+  text-align: left;
+  padding: 10px 5px;
+}
+
+.product__l1-info {
+  padding: 15px 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.product__l1-name {
+  color: #ccc;
+}
+
+.product__l1-price {
+  display: flex;
+  gap: 20px;
+}
+
+.product__l2 {
+  margin-top: 100px;
+  display: flex;
+  padding: 0 20px;
+  gap: 50px;
+}
+
+.product__l2-left {
+  width: 50%;
+}
+
+.product__l2-left-descript {
+  background-color: whitesmoke;
+  padding: 50px 0;
+}
+
+.product__l2-left-buy {
+  height: 300px;
+  background-color: whitesmoke;
+}
+
+.buy-price {
+  font-size: 2rem;
+  padding-top: 10%;
+}
+
+.add-to-cart {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: var(--green-color);
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+.add-to-cart:hover {
+  color: var(--green-color);
+  background-color: whitesmoke;
+}
+
+.product__l2-right {
+  height: 100%;
+  width: 50%;
+}
+
+.product__l2-left-img {
+  width: 100%;
+  height: 683px;
+  object-fit: cover;
+}
+
+.product__l2-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product__l1-list:nth-child(3) {
+}
+.product__l2-items {
+  width: 50%;
+}
+
+.product__l2-info {
+  padding: 15px 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  max-width: calc(100% - 135px);
+  margin-bottom: 30px;
+}
+
+#footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #00008b;
+  padding: 50px 0 30px 0;
+  align-items: center;
+  color: white;
+}
+
+.footer__media-icon {
+  padding: 20px;
+  margin-right: 10px;
+  color: white;
+  background-color: #02022c;
+}

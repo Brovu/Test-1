@@ -1,0 +1,31 @@
+:root {
+  --green-color: rgb(95, 209, 95);
+}
+
+.green-style {
+  color: var(--green-color);
+  font-size: 3rem;
+}
+
+.base-style {
+  color: white;
+  font-size: 3rem;
+}
+
+.product-sale {
+  color: #ccc;
+  font-size: 1rem;
+}
+
+.gray-style {
+  color: #ccc;
+}
+
+img {
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
